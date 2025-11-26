@@ -14,7 +14,8 @@ class GradientContainer extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            const Color.fromARGB(255, 104, 175, 209),
+            
+            const Color(0xFF68AFD1),
             const Color.fromARGB(255, 193, 229, 244),
             const Color.fromARGB(255, 206, 236, 248),
             const Color.fromARGB(255, 230, 242, 247),

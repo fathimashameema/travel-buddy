@@ -19,7 +19,7 @@ class MainBodyContent extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.transparent,
       body: Padding(
-        padding: padding ?? const EdgeInsets.all(0),
+        padding: padding ?? const EdgeInsets.only(bottom: 20),
         child: Column(
           children: [
             header ?? SizedBox.shrink(),

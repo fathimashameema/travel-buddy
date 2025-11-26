@@ -3,7 +3,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:travel_buddy/models/dummy_data.dart';
 import 'package:travel_buddy/provider/simple_providers.dart';
 import 'package:travel_buddy/screens/add_place_screen.dart';
-import 'package:travel_buddy/widgets/custom_filter_chip.dart';
 import 'package:travel_buddy/widgets/custom_icon_button.dart';
 import 'package:travel_buddy/widgets/custom_search_field.dart';
 import 'package:travel_buddy/widgets/filter_buttons.dart';

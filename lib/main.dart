@@ -13,6 +13,7 @@ final theme = ThemeData().copyWith(
 );
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(ProviderScope(child: const MyApp()));
 }
 
