@@ -1,23 +1,21 @@
-
 class Place {
-  final String id;                       // Unique identifier
-  final String name;                     // Name of the place
-  final String? description;             // Optional description
-  final String? location;                // City / country / address
-  final double? latitude;                // For map support
-  final double? longitude;               // For map support
-  
-  final String? coverImage;              // MAIN cover image (URL or local path)
-  final List<String>? galleryImages;     // Additional images
+  final String id;
+  final String name;
+  final String? description;
+  final String? location;
+  final double? latitude;
+  final double? longitude;
+  final String? coverImage;
+  final List<String>? galleryImages;
+  final bool isFavourite;
 
-  final bool isVisited;                  // Has user visited this place?
-  final DateTime? visitedDate;           // When they visited
+  final bool isVisited;
+  final DateTime? visitedDate;
 
-  final String? visitReport;             // Journey notes, summary
-  final double? userRating;              // 1–5 rating (optional)
-
-  final DateTime createdAt;              // When the place was added
-  final DateTime updatedAt;              // For future sync features
+  final String? visitReport;
+  final double? userRating;
+  final DateTime createdAt;
+  final DateTime updatedAt;
 
   const Place({
     required this.id,
@@ -28,6 +26,7 @@ class Place {
     this.longitude,
     this.coverImage,
     this.galleryImages,
+    this.isFavourite = false,
     this.isVisited = false,
     this.visitedDate,
     this.visitReport,
@@ -36,7 +35,6 @@ class Place {
     required this.updatedAt,
   });
 
-  /// copyWith allows modification of only some fields
   Place copyWith({
     String? id,
     String? name,
@@ -47,6 +45,7 @@ class Place {
     String? coverImage,
     List<String>? galleryImages,
     bool? isVisited,
+    bool? isFavourite,
     DateTime? visitedDate,
     String? visitReport,
     double? userRating,
@@ -62,6 +61,7 @@ class Place {
       longitude: longitude ?? this.longitude,
       coverImage: coverImage ?? this.coverImage,
       galleryImages: galleryImages ?? this.galleryImages,
+      isFavourite: isFavourite ?? this.isFavourite,
       isVisited: isVisited ?? this.isVisited,
       visitedDate: visitedDate ?? this.visitedDate,
       visitReport: visitReport ?? this.visitReport,

@@ -14,6 +14,7 @@ final List<Place> dummyPlaces = [
     longitude: 78.0421,
     coverImage: null,
     galleryImages: null,
+    isFavourite: true,
     isVisited: true,
     visitedDate: DateTime(2024, 2, 14),
     visitReport:
@@ -32,6 +33,8 @@ final List<Place> dummyPlaces = [
     longitude: 2.2945,
     coverImage: null,
     galleryImages: null,
+    isFavourite: false,
+
     isVisited: false,
     visitedDate: null,
     visitReport: null,
@@ -49,6 +52,8 @@ final List<Place> dummyPlaces = [
     longitude: 115.1889,
     coverImage: null,
     galleryImages: null,
+    isFavourite: true,
+
     isVisited: true,
     visitedDate: DateTime(2023, 11, 8),
     visitReport: "Amazing sunset! Must try the beachside cafes.",
@@ -66,6 +71,8 @@ final List<Place> dummyPlaces = [
     longitude: 138.7274,
     coverImage: null,
     galleryImages: null,
+    isFavourite: true,
+
     isVisited: false,
     visitedDate: null,
     visitReport: null,
@@ -83,6 +90,8 @@ final List<Place> dummyPlaces = [
     longitude: -79.0377,
     coverImage: null,
     galleryImages: null,
+    isFavourite: false,
+
     isVisited: true,
     visitedDate: DateTime(2022, 7, 21),
     visitReport:
