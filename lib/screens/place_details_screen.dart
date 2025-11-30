@@ -16,6 +16,7 @@ class PlaceDetailsScreen extends StatelessWidget {
     final PanelController panelController = PanelController();
 
     return Scaffold(
+      extendBody: true,
       backgroundColor: Colors.white,
       bottomNavigationBar:
           place.isVisited

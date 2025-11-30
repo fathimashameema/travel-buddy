@@ -34,7 +34,7 @@ class PlaceDetailsHeader extends StatelessWidget {
                   Icon(Icons.location_on_outlined, color: Colors.black45),
                   SizedBox(width: 10),
                   Text(
-                    place.location!,
+                    place.location!.address,
                     style: GoogleFonts.ubuntu(
                       fontSize: 18,
                       color: Colors.black45,

@@ -17,13 +17,14 @@ class ContainerField extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
+        padding: EdgeInsets.all(15),
         alignment: Alignment.center,
         width: double.infinity,
-        height: height ?? 50,
+        height: height ?? 55,
         decoration: BoxDecoration(
           color: Colors.transparent,
           border: Border.all(color: Colors.black87),
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: BorderRadius.circular(12),
         ),
         child: child,
       ),

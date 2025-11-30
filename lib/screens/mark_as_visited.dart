@@ -37,6 +37,8 @@ class _MarkAsVisitedScreenState extends ConsumerState<MarkAsVisitedScreen> {
   Widget build(BuildContext context) {
     final state = ref.watch(addPlaceProvider);
     return Scaffold(
+      extendBody: true,
+      backgroundColor: Colors.transparent,
       body: GradientContainer(
         padding: EdgeInsets.only(top: 40),
         child: Column(

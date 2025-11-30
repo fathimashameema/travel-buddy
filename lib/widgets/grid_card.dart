@@ -47,7 +47,7 @@ class GridCard extends StatelessWidget {
                     ? Row(
                       children: [
                         Icon(Icons.location_on_outlined, size: 15),
-                        Text(place.location!),
+                        Text(place.location!.address),
                       ],
                     )
                     : SizedBox.shrink(),

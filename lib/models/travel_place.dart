@@ -1,10 +1,11 @@
+import 'package:travel_buddy/models/location_model.dart';
+
 class Place {
   final String id;
   final String name;
   final String? description;
-  final String? location;
-  final double? latitude;
-  final double? longitude;
+  final LocationModel? location;
+
   final String? coverImage;
   final List<String>? galleryImages;
   final bool isFavourite;
@@ -22,8 +23,7 @@ class Place {
     required this.name,
     this.description,
     this.location,
-    this.latitude,
-    this.longitude,
+
     this.coverImage,
     this.galleryImages,
     this.isFavourite = false,
@@ -39,9 +39,8 @@ class Place {
     String? id,
     String? name,
     String? description,
-    String? location,
-    double? latitude,
-    double? longitude,
+    LocationModel? location,
+
     String? coverImage,
     List<String>? galleryImages,
     bool? isVisited,
@@ -57,8 +56,7 @@ class Place {
       name: name ?? this.name,
       description: description ?? this.description,
       location: location ?? this.location,
-      latitude: latitude ?? this.latitude,
-      longitude: longitude ?? this.longitude,
+
       coverImage: coverImage ?? this.coverImage,
       galleryImages: galleryImages ?? this.galleryImages,
       isFavourite: isFavourite ?? this.isFavourite,

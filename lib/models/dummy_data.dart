@@ -1,3 +1,4 @@
+import 'package:travel_buddy/models/location_model.dart';
 import 'package:travel_buddy/models/travel_place.dart';
 import 'package:uuid/uuid.dart';
 
@@ -9,9 +10,12 @@ final List<Place> dummyPlaces = [
     name: "Taj Mahal",
     description:
         "The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being the jewel of Islamic art in India and one of the universally admired masterpieces of the world's heritage. It is regarded as one of the best examples of Mughal architecture and a symbol of Indian history. The Taj Mahal is a major tourist attraction and attracts more than five million visitors a year.",
-    location: "Agra, India",
-    latitude: 27.1751,
-    longitude: 78.0421,
+    location: LocationModel(
+      address: "Agra, India",
+      latitude: 24.4,
+      longitude: 234.3,
+    ),
+
     coverImage: null,
     galleryImages: null,
     isFavourite: true,
@@ -28,9 +32,12 @@ final List<Place> dummyPlaces = [
     id: uuid.v4(),
     name: "Eiffel Tower",
     description: "An iconic iron tower in Paris.",
-    location: "Paris, France",
-    latitude: 48.8584,
-    longitude: 2.2945,
+    location: LocationModel(
+      address: "Paris, France",
+      latitude: 24.4,
+      longitude: 234.3,
+    ),
+
     coverImage: null,
     galleryImages: null,
     isFavourite: false,
@@ -47,9 +54,12 @@ final List<Place> dummyPlaces = [
     id: uuid.v4(),
     name: "Bali Beach",
     description: "Beautiful relaxing beach with blue waters and soft waves.",
-    location: "Bali, Indonesia",
-    latitude: -8.4095,
-    longitude: 115.1889,
+    location: LocationModel(
+      address: "Bali, Indonesia",
+      latitude: 24.4,
+      longitude: 234.3,
+    ),
+
     coverImage: null,
     galleryImages: null,
     isFavourite: true,
@@ -66,9 +76,12 @@ final List<Place> dummyPlaces = [
     id: uuid.v4(),
     name: "Mount Fuji",
     description: "Japan’s highest mountain and a popular hiking destination.",
-    location: "Honshu, Japan",
-    latitude: 35.3606,
-    longitude: 138.7274,
+    location: LocationModel(
+      address: "Honshu, Japan",
+      latitude: 24.4,
+      longitude: 234.3,
+    ),
+
     coverImage: null,
     galleryImages: null,
     isFavourite: true,
@@ -85,9 +98,12 @@ final List<Place> dummyPlaces = [
     id: uuid.v4(),
     name: "Niagara Falls",
     description: "Massive waterfalls between the USA and Canada border.",
-    location: "Ontario, Canada",
-    latitude: 43.0962,
-    longitude: -79.0377,
+    location: LocationModel(
+      address: 'niagra',
+      latitude: 24.4,
+      longitude: 234.3,
+    ),
+
     coverImage: null,
     galleryImages: null,
     isFavourite: false,
